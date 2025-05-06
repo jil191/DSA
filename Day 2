@@ -1,0 +1,97 @@
+#STATIC BLOCK AND CONSTRUCTOR 
+Constructors are used to initialize the objects. For every class there will be a default constructor. 
+Whenever we cretae an object constructor will be called, then object will be created.
+Constructor has class name and method properties.
+
+
+public class q2 {
+    public static void main(String[] args) {
+        Demo d1 = new Demo();
+        Demo d2 = new Demo();
+    }
+}
+class Demo {
+    static {
+        System.out.println("Static Block");
+    }
+    Demo() {
+        System.out.println("Constructor"); 
+    }
+   
+}
+
+Static block :- it will be created with a static tuple. It will be called automatically.No need to call with either object or class.
+Static Method :- For static method, no need to call with object. u can directly call with class name and here static will act as instance or object.
+
+#RECURSION 
+public class Recursion {
+
+   
+    static int hcf(int a, int b) {
+        
+        if (b == 0) {
+            return a;
+        }
+        else {
+        
+        return hcf(b, a % b);
+    }
+    }
+
+    
+    public static void main(String[] args) {
+        Recursion obj = new Recursion();
+        int result = obj.hcf(18,12);
+        System.out.println(result);
+    }
+}
+
+# CONDITIONAL STATEMENTS
+Types : if , else , else-if ladder, switch case
+These statements are used to check the condition and to print the relevant block in constant time. 
+Example :- if(a%2 == 0){
+              return True;
+            }
+            else {
+              return False;
+            }
+
+
+# CONTROL STATEMENTS 
+Types : Entry control loop , Exit control loop
+
+Entry control loop  :- FOR and WHILE 
+Syntax FOR LOOP - for(start;end;difference)
+
+Syntax WHILE LOOP - start;
+                    while(end){
+                        diff;
+                    }
+When we know the range we will use FOR loop and when we dont know the range, preferred to use WHILE loop.
+
+class Person{
+    int[] arr = {1,2,3,4,5};
+    for(int i = 0;i<n;i++){
+        return arr[i];
+    }
+}
+
+
+Exit control loop :- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
