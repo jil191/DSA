@@ -1,0 +1,28 @@
+2-D ARRAY
+It consists of rows and columns.
+Syntax: int[][] arr = new int[][];
+first [] - no. of rows
+second [] - no. of columns
+While declaring the array we have to declare no. of rows and column no. is optional
+Each row will act as an individual array 
+Eg:- 
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[][] arr = new int[3][2];
+        for(int i = 0;i<arr.length;i++){
+            for (int j =0;j<arr[i].length;j++){
+                arr[i][j] = in.nextInt();
+                
+            }
+        }
+        for(int i = 0;i<arr.length;i++){
+            for (int j =0;j<arr[i].length;j++){
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
