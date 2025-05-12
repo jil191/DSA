@@ -1,0 +1,24 @@
+#ARRAY LIST
+Array having fixed size , so once we declare, we cant change the size.
+To increase array size dynamically we have to use array list. It belongs to collection framework.
+What is Framework ? - Framework is nothing but predefined methods and will guide the program.
+Syntax:- List <Wraper Class> ArrayListName = new ArrayList<>():
+List<Integer> leaders = new ArrayList<>();
+
+List is an interface and interface contains incomplete methods.
+Wraper class is not a primitive datatype. it's a class and in collections, we have to use wraper class only.
+<> is called GENERICS.
+Array list is a class and it contains complete methods.
+Array List is a dynamic array. If my array size is 2 and I'm trying to add 3rd element, the size will be doubled and it will copy previous elements.
+vice-versa, the array size will become half.
+As ArrayList is a class, u have to import the ArrayList class. 
+Now we can access all the pre-defined methods which consists in ArrayList.
+
+
+# SUB ARRAYS
+Arrays having consecutive elements from the Main or Original Array. 
+Eg: Main: {1,2,4,5,6,7}
+    Sub:- {2,4,5}
+
+# MAXIMUM SUM OF SUB-ARRAY
+IT IS A KADEN'S ALGORITHM
