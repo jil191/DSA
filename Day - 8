@@ -1,0 +1,83 @@
+# RECURSIONS
+Function calls itself and itself till it meets base condition.
+There are 2 types in recursions: 
+1) Function calling same function itself and itself.
+2) Function calling another function again and again it meets base condition.
+If we didn't mention base condition properly, we will not get an exception called stack overflow.
+Recursions are used to break the code.
+// Write a code to find factorial using recursions
+5! = 5 * 4!
+4! = 4 * 3!
+3! = 3 * 2!
+2! = 2 * 1!
+1! = 1 * 0!
+
+For every recursive call, Elements will be pushed into next stack. After reacing base condition, elements will be poped.
+For our question, 5,4,3,2,1 all these values will be pushed to stack.
+public class RecursionExample {
+    static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return n * factorial(n - 1);
+    }
+    public static void main(String[] args) {
+        int number = 5; 
+        int result = factorial(number);
+        System.out.println(result);
+    }
+}
+
+// Fibonacci series using recursion
+public class FibonacciRecursion  
+    static int f(int n) {   
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }    
+        return f(n - 1) + f(n - 2);
+    }   
+    public static void main(String[] args) {
+        int count = 10; 
+        for (int i = 0; i < count; i++) {
+            System.out.print(f(i) + " ");
+        }
+    }
+}
+
+
+#MAX FUNCTION
+max = Math.max(arr[i],max);
+
+#MIN FUNCTION
+min = Math.min(arr[i],min);
+
+
+#
+In Java, we dont have pointers so we cant use references. 
+// Reverse an array usig two pointers 
+public class ArraySwaping{
+    public static void main(String[] args) {
+    int[] arr = {1,2,4,3,5};
+    int i  = 0;
+    int j = arr.length - 1;
+    while (i < j) {
+        int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+    }
+    for (int num : arr) {
+            System.out.print(num + " ");
+        }
+     }
+    
+}
+
+
+
+
+
