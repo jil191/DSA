@@ -1,0 +1,89 @@
+#RECURSIONS
+
+Q. We have to remove a character from a given string using recursions
+A. Assume that we are starting with two strings: input string and output string
+at initial output string is empty.
+We have few steps :
+1) Take the first character from the string and store in a character variable
+2) check the variable with our target character. If it matches, just return output string, else append the character to  
+3) Next slice the string by 1 character.
+4) to get a particular character placed at a particular index we have to use charat()
+5) To get a character sliced or removed from the string, use SubString()
+
+"Hello"
+input string = "ello"
+1st recursive call = "llo"
+2nd recursive call = "lo"
+3rd recursive call = "o"
+4th recursive call = " "
+5th recursive call = "Hllo"
+6th recursive call = "Hll"
+
+Whener input string becomes empty, we have to stop the recusion.
+import java.util.*;
+
+class Main {
+    
+    static String skip(String str) {
+        if (str.isEmpty()) {
+            return "";
+        }
+        char ch = str.charAt(0);
+        if (ch == 'e') {
+            return skip(str.substring(1)); 
+        } else {
+            return ch + skip(str.substring(1)); 
+        }
+    }
+
+    public static void main(String[] args) {
+        String name = "Hello";
+        String result = skip(name);
+        System.out.println(result);
+    }
+}
+
+
+Q. From a given string skip a word and print rest of the characters.
+//Q. From a given string skip a word and print rest of the characters.
+// like we have to skip hello from asdfhellohjkk
+
+import java.util.*;
+
+class Main {
+    
+    static String skip(String str) {
+        if (str.isEmpty()) {
+            return "";
+        }
+        char ch = str.charAt(0);
+        if (str.startsWith("hello")) {
+            return skip(str.substring(4)); 
+        } else {
+            return ch + skip(str.substring(1)); 
+        }
+    }
+
+    public static void main(String[] args) {
+        String name = "asdfhellohjkk";
+        String result = skip(name);
+        System.out.println(result);
+    }
+}
+
+
+
+#TWO POINTER PROBLEMS
+STEP 1) Initialize the pointers acc to the question
+2) If u r starting 1st pointer at 0th index and 2nd pointer at last index, whenever both pointers crosses each other, break the loop
+3) in between do the relevant operation 
+Q. Reverse an array {1,2,3,4,5}
+Steps: 1) Start the pointer i at 0th index that is arr[i] = 1
+2) another pointer j at last index that is n - 1 ; arr[j] = 5
+3) swap both the places and then increase pointer i by 1 and decrease the pointer j by 1
+4) when both the ppointers crosses each other at 3, break the loop.
+5) then print the reverse array
+
+
+
+
