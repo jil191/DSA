@@ -53,4 +53,13 @@ but to get string length, we use array.length method
 - split(String regex) - Splits the string into an array based on a regex.
 - equals(String anotherString) / equalsIgnoreCase(String anotherString) - Compares two strings.
 
-Q. 
+#SUBSETS
+For a GIVEN ARRAY, we have to print possible arrays. it should be in a sequence but continuous, that's called subsets
+and in an array, if we have n number of elements we will get 2^n subsets.
+
+
+#Backtracking
+It is an example of recursion
+in recursion, we have only 2 possibilities; either if or else and in backtracking, we have multiple possibilities 
+in most of the problems, whenever we reach base case, we have to print all the base case elements.
+Remove last element in every recursive call then the backtracking will complete
