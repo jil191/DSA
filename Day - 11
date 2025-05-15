@@ -1,0 +1,20 @@
+#STRINGS
+Strings are classes and arrays are objects.The sequence of characters is called Strings.
+Strings are immutable.
+All the array objects will be created in int memory but strings are created inside heap memory
+Once a string got created, it will be created fixed. It means we cant modify the string.
+
+String a = "Hello";
+String b = "Hello";  
+System.out.print(a==b);
+it will return true as it is stored in a pool 
+
+String a = new String("Hello");
+String b = new String("Hello");
+System.out.print(a==b);
+It will return false as the memory is stored for two different objects here. 
+
+This == is used to compare address locations.
+
+System.out.print(a.equals(b));
+Equals is used to compare the data.
