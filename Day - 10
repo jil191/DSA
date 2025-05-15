@@ -40,3 +40,17 @@ public class ArraySwaping{
 
 To get array length, we have to array.length 
 but to get string length, we use array.length method 
+
+#COMMONLY USED STRING METHODS
+- length() - Returns the length of the string.
+- charAt(int index) - Returns the character at the specified index.
+- substring(int beginIndex, int endIndex) - Extracts a portion of the string.
+- contains(CharSequence s) - Checks if the string contains the specified sequence.
+- startsWith(String prefix) / endsWith(String suffix) - Checks if the string starts/ends with a given substring.
+- toUpperCase() / toLowerCase() - Converts the string to uppercase or lowercase.
+- trim() - Removes leading and trailing spaces.
+- replace(String old, String new) - Replaces occurrences of a substring.
+- split(String regex) - Splits the string into an array based on a regex.
+- equals(String anotherString) / equalsIgnoreCase(String anotherString) - Compares two strings.
+
+Q. 
