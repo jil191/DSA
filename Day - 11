@@ -1,0 +1,87 @@
+#DUTCH FLAG ALGORITHM
+
+Initialize 3 pointers; l at 0th index , m at 0th index and h at n-1 index.
+The elements between m and h are unsorted so we have to traverse between m and h.
+if arr[m] = 0 swap between arr[m] and arr[l] and increase m and increase l.
+if arr[m] = 1, just increase m
+else swap arr[m] and arr[h] and increase h.
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 0, 2, 0, 1, 2, 1, 0, 0, 1};
+        int m = 0;
+        int l = 0;
+        int h = arr.length - 1;
+
+        while (m <= h) {
+            if (arr[m] == 0) {
+                swap(arr, m, l);
+                m++;
+                l++;
+            } else if (arr[m] == 1) {
+                m++;
+            } else { 
+                swap(arr, m, h);
+                h--;
+            }
+        }
+
+        
+        System.out.println(Arrays.toString(arr));
+    }
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
+
+#COLLECTION FRAMEWORKS
+
+1) LIST
+--> ArrayList
+--> LinkedList
+--> Vector
+
+2) Set
+--> HostSet
+--> LinkedListSet
+--> TraceSet
+
+3) Map
+--> HashMap
+--> LinkedList Map
+--> Tree Map
+
+
+List , Set and Map are interfaces. Rest of all the terms are classes.
+Interface contains incomplete methods. Class contains complete methods.
+List is ordered which can allow duplicates.
+Set is unordered which won't accept duplicates.
+Maps contains key value pairs.
+
+Syntax of For-each loop ---> for(i : arr){
+                            }
+Set<Integer> values = new HashSet<>();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
