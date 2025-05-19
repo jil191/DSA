@@ -1,0 +1,52 @@
+#Majority element 
+
+1.From the given array, assume that starting index ofd the array is the majority element.FRom the targeted comapre rest of the elements.
+2.So if youn got same value , increase the count.If you get the different count decrease the count .
+3.If counter become 0 , it means til now we havent see any majority element .
+4.Again szelect the new target element . very next element is ur target element 
+5.At the end of for loop , if ounter is more than 0 , it means there is a majority element.
+6.Taking the target  value , count how many times that were repeated in an array. 
+7.If the counter is greater n/2 it means that my majority element .
+
+
+class Solution {
+
+    public int majorityElement(int[] nums) {
+        int n = nums.length, maxcount = 0;
+        int res = 0;
+
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int j = 0; j < n; j++) {
+                if (nums[i] == nums[j]) {
+                    count++;
+                }
+            }
+
+            if (count > maxcount || (count == maxcount && nums[i] > res)) {
+                maxcount = count;
+                res = nums[i];
+            }
+        }
+
+        return res; 
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] nums = {3, 2, 3};
+        System.out.println(s.majorityElement(nums));
+    }
+} 
+
+
+
+#Longest consecutive subsequence
+
+create a set.
+run a for loop. take the value from array and push it to the set using insert method
+start iterating set values.
+we have to find whether the element is starting or not by decreasing the value and checking that value is there in the set or not.
+if we got starting value, then start comparing. to compare just add the value.
+
+
