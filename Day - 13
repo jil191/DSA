@@ -27,6 +27,12 @@ Input:  N = 6,  start[] = {1,3,0,5,8,5}, end[] =  {2,4,5,7,9,9}
 
 Output: 1 2 4 5
 
+Step 1: Make the pairs [(1,2),(3,4),(0,5),(5,7),(8,9),(5,9)]
+Step 2: Do custom sorting with comparator according to the question.
+Step 3: End time of current meeting should be strictly lesser than the next meeting.
+Step 4: if end time is lesser 
+
+
 #job scheduling
 Input: N = 4, Jobs = {(1,4,20),(2,1,10),(3,1,40),(4,1,30)}
 
@@ -40,5 +46,12 @@ Input: N = 3, W = 50, values[] = {100,60,120}, weight[] = {20,10,30}.
 
 Output: 240.00
 
-Explanation: The first and second items  are taken as a whole  while only 20 units of the third item is taken. Total value = 100 + 60 + 80 = 240.00
+Explanation: The first and second items are taken as a whole  while only 20 units of the third item is taken. Total value = 100 + 60 + 80 = 240.00
+
+Step 1: W/V ratio = 5,6,4
+Step 2: Make triplets = [(100,20,5),(60,10,6),(120,30,4)]
+Step 3: Sort the triplets according to the W/V ratio.
+Step 4: Pick the weights to fill the maximum capacity that is 50 in the question so that it gives highest value.
+
+
 
