@@ -1,0 +1,92 @@
+Maximum product of sub array elements
+[2,3,-6,4]
+In the sub-array if we have even positive numbers, product will be positive
+If we have odd negative numbers, product will be negative
+In the sub-array if we have atleast a zero, start your product variable with 1.
+if we have negative value, the product of prefix element will be positive and the suffix of the native element will be positive
+Initialize maximum variable.
+
+abcabc
+a b c ab abc abca abcab abcabc
+bc bca bcab bcabc ca cab cabc 
+ab abc bc 
+
+# KOKO EATING BANANAS
+Step 1: Whatever maximum element in an array, we have to check that much elements(run the loop from 0 to max)
+Step 2: Initialize left pointer at 0th index and right pointer at max 
+Step 3: Get the middle value and divide the array elements
+Step 4: Get the C values
+Step 5: Add all those C values and compare with Taget hours. if it is less than or equal to , element right half
+        Change the right pointer to mid - 1
+Step 6: If the sum is greater than the target, eliminate left half. change left pointer to mid + 1.
+Step 7: Return arr[left].
+
+#OBJECT ORIENTED PROGRAMMING
+
+Few pillars of oop:
+Inheritance
+Encapsulation
+Polymorphism
+Abstraction
+
+To achieve those properties the pre requirement are class,object,constructorand interface. 
+CLASS: It is a virtual entity and blueprint for objects.
+OBJECT: Instance of class. We can call the methods which were present in the particular class by creating object for that particular class.
+CONSTRUCTOR: Initializes the object.
+Two Types; 1) Defalut constructor 2)Parametrized constructor
+For every class, there will be a default constructor and parametrized constructor- contructor having some parametrs.
+
+INHERITANCE
+Using EXTEND keyword, we can inherit properties from classes.
+Using IMPLEMENT keyword, we can inherit properties from interfaces.
+
+Types:
+1)Single Inheritance 
+-- The properties are inherited from parent class to child class.
+
+2)Multi-Level Inheritance
+-- Properties are inherited to parent class from grandparent class and properties are inherited to child class from parent class.
+
+3)Multiple Inheritance
+-- Properties are inherited from multiple parent classes.
+
+4)Heirarchy Inheritance
+-- Properties are inherited to multiple child classes.
+
+
+POLYMORPHISM
+Same method appearing multiple times.
+Main Method can be overridden.
+
+Types: 
+1) Method Overloading - In same class, if we have multiple methods with same name with different parameters.
+2) Method Overriding - In child class, if we declare a method which were present in the parent class(same method name and same parameters)
+
+
+ENCAPSULATION
+Binding method and data and hiding sensitive data.
+If the variables are private, we cant access outside the class.If we want to access, we can access using methods.
+
+ABSTRACTION 
+Hiding implementation showing essential detials.
+Abstract metgod is an incomplete method.
+Types:
+1) Data Abstraction
+2) Functional Abstraction
+3) Procedral Abstraction
+4) Control Abstraction
+
+If we want to make a method abstract, we have to use ABSTRACT keyword and if we have ABSTRACT method,we have to make the class abstract class.
+
+INTERFACE
+It contains all abstract methods. 
+We cant create object for interface.
+
+
+
+
+
+
+
+
+
