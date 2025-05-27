@@ -1,0 +1,15 @@
+LINKED LIST CRUD OPERATION
+
+--> Delete 
+1) Delete head note
+2) Delete tail node
+3) Delete Nth node
+4) Delete by Value
+
+--> Insert
+1) Insert head note
+2) Insert tail node
+3) Insert Nth node
+4) Insert by Value
+
+--> 
