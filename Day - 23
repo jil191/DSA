@@ -1,0 +1,135 @@
+Sorting
+Use case:- to get the target output in less time.
+
+Types:                       Best Case           Average Case           Worst Case
+1) Bubble Sort                O(n)                O(n^2)                  O(n^2)
+2) Selection sort             O(n^2)              O(n^2)                  O(n^2)
+3) Insertion sort             O(n)                O(n^2)                  O(n^2)
+4) Merge Sort                 O(n log n)          O(n log n)              O(n log n)
+5) Quick Sort                 O(n log n)          O(n log n)              O(n^2)
+
+
+Bubble Sort:
+It will compare the adjacent elementsand it will swap acc. 
+After an iteration, the weightest or lighest element will go to the end.
+
+Selection Sort:
+We are selecting an element and placing at right place.
+For sure we have to check each and every element even if it is sorted.
+
+STACKS AND QUEUES
+
+Stack is a special data structure which follows LIFO principle and which comes under linear data structure.
+We will get all the outputs in constant time for all stack operations.
+Time complexity is O(1).
+
+STACK OPERATIONS:
+
+push() - Adding the elements into the stack
+pop() - Deleting the last element in stack.
+peek() - Getting the top most element in stack.
+isEmpty() - Checking whether stack contains elements or not.
+display() && size() - Printing all the stack elements && getting the size of the stack.
+
+
+for push operation, define a method top and use top = -1 and push an elemnt into the stack and to iterate, top = top + 1.
+for pop operation , top = top - 1.
+for peek operation, simply return top
+for isEmpty operation, check if top = -1, return true
+for display() and size(), return top + 1
+
+public class Stack {
+    private int maxSize;
+    private int[] stackArray;
+    private int top;
+
+    public Stack(int size) {
+        maxSize = size;
+        stackArray = new int[maxSize];
+        top = -1;
+    }
+
+    public void push(int item) {
+        if (top >= maxSize - 1) {
+            System.out.println("Stack Overflow! Cannot push " + item);
+        } else {
+            stackArray[++top] = item;
+            System.out.println("Pushed: " + item);
+        }
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack Underflow! Cannot pop from empty stack.");
+            return -1;
+        } else {
+            int item = stackArray[top--];
+            System.out.println("Popped: " + item);
+            return item;
+        }
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. No top element.");
+            return -1;
+        } else {
+            return stackArray[top];
+        }
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public int size() {
+        return top + 1;
+    }
+
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty.");
+        } else {
+            System.out.println("Stack (top to bottom):");
+            for (int i = top; i >= 0; i--) {
+                System.out.println(stackArray[i]);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Stack stack = new Stack(5);
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        stack.display();
+
+        System.out.println("Top element (peek): " + stack.peek());
+        System.out.println("Size of stack: " + stack.size());
+
+        stack.pop();
+        stack.display();
+
+        System.out.println("Is stack empty? " + stack.isEmpty());
+    }
+}
+
+
+QUEUEs are most used linear data structure.
+
+QUEUE METHODS :
+we can name whatever we want. 
+if u want to add elements we will use offer method. --> offer()
+if u want to delete the first element , we will use poll method --> poll()
+peek()
+size()
+isEmpty()
+display()
+
+
+
+
+
+
