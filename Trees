@@ -1,0 +1,41 @@
+TREES 
+Trees are acyclic graphs; that is, they dont form cycles.
+
+Tree creation:
+we have to create a node which contains data as well as left and right pointer.
+
+The starting node is called root node.
+Eventually every node is a root node. Whatever nodes which are added to the root node, we call it as a 
+
+TYPES:
+1) N- ary:- N-nodes can be attached to a single node 
+Examples: Trie's
+
+
+2) Binary :- At max, two child nodes can be added to the root node.
+Examples: 1) Binary search tree
+          2) AVL Tree and Red-Black tree
+          3) Segment tree
+
+To travel from root node to last nodes, we call it as leaf node. 
+
+Depth First Search
+# Types of traversal:
+PreOrder - Root,left,right
+InOrder - Left,Root,Right
+PostOrder - Left,Right,Root
+
+
+Complete binary tree - Nodes should start from left to right.
+Full Binary tree - Node contains either 2 or 0 child nodes
+Perfect binary tree - Every level should be filled and every node should contain 2 child nodes.
+
+BINARY SEARCH TREE
+Rule : Left node < Root Node < Right node
+
+In BST, if u print inorder traversal, u will get output sorted.
+
+SEGMENT TREE
+In an array, we will use a simple for loop and the time complexity will be O(n) and we want to get the output in logn.
+We will use segment tree to get the target output in logn time complexity.
+
