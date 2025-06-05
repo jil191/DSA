@@ -1,0 +1,12 @@
+HEAPS
+Heap data structure will store the data in arrays. It will be stored by trees and the values will be arranged by trees.
+With the help of complete binary tree, the elements will be arranged acc.
+With the help of priority queues, heaps got created.
+As the data is stored in arrays, u can access the data by index values.
+As trees got involved, definitely heaps come under non linear data structure.
+It should follow complete binary tree
+
+Types:
+1) Bottom to Top approach
+2) Top to Bottom approach
+
